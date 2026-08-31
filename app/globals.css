@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Avenir Next", "Segoe UI", sans-serif; background: #10150f; color: #e7eedd; }
+.wrap { padding: 32px 20px 64px; max-width: 1200px; margin: 0 auto; }
+.eyebrow { letter-spacing: 0.18em; text-transform: uppercase; color: #9cbc6a; font-size: 0.72rem; }
+h1 { font-size: 3rem; margin: 8px 0 16px; }
+.lanes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.lanes.five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.empty { color: #8aa07a; font-size: 0.85rem; }
+.crew { color: #9cbc6a; }
+section { background: #182117; border-radius: 16px; padding: 12px; min-height: 280px; }
+.card { background: #243022; border-radius: 12px; padding: 12px; margin: 10px 0; }
+.card.risk { outline: 1px solid #e07a67; }
+form {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+form input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+}
+button { margin-top: 8px; border: 0; border-radius: 999px; padding: 8px 12px; cursor: pointer; }
+@media (max-width: 900px) { .lanes { grid-template-columns: 1fr; } }
